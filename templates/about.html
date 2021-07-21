@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <!-- Regular CSS -->
+  <!-- <link rel="stylesheet" href="{{ url_for('static', filename='css/style_ray.css')}}"> -->
+
+  <title>Analysis Dashboard</title>
+</head>
+
+<body>
+<!-- Navigation bar -->
+<div class="container">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+       
+    <ul class="nav nav-tabs w-100 nav-justified">
+        <li class="nav-item">
+          <a class="nav-link" href="{{ url_for('home')}}">Dashboard</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{{ url_for('national')}}">National</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{{ url_for('map')}}">Map</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="{{ url_for('about')}}">About</a>
+        </li>
+      </ul>
+
+  </nav>
+  </div>
+<br>
+<!-- Test -->
+    <div class="container">
+        <div class="row">
+        <div class="col-lg-12">
+                <div class="jumbotron0">
+                  <h2>About</h2>
+                  <p>Solar photovoltaic (‘solar power’) generated 3.1 per cent of Australia’s electricity in 2016-17,
+                     the majority of which came from small-scale rooftop installation. More than two million, or 21 percent,
+                      of Australian households now have rooftop solar, with a combined capacity exceeding 10 GW. However,
+                       there remains huge potential on Australia’s remaining roofs, for the expansion of solar power,
+                        especially given our climate. 
+                  <p>Federal solar incentives and rebates for solar installation have led to a rapid adoption of this
+                     technology in recent years. However,the factors that that lead to consumers adopting this technology,
+                     and how that might inform future measures to increase solar,remain less clear. </p>
+  
+                  <h2>Team</h2>
+                   <p>Our group consits of four members and this project is a part of our Bootcamp in Data Analytics,
+                     organised by University of Western australia. </p> 
+                     <ul>
+                       <li>Dale Currigan</li>
+                       <li>Helen Amin</li>
+                       <li>Rajesh Nair</li>
+                       <li>Ray Camo</li>
+  
+                     </ul>
+                  <h2>Aim</h2>
+  
+                  <p>
+                    <ul>
+                      <li>Create a SQLite database of current and historical data, broken down by postcode, containing solar 
+                        power installations, power generation, and factors that may influence the uptake of solar 
+                        (e.g. household income, federal government solar rebates).
+                      </li>
+                      <li>Use this database to create a series of interactive data visualisations that describe the current state of 
+                        home solar in Australia, as well as identifying areas of unmet potential and factors that may influence homeowner’s
+                         willingness to adopt this technology.
+                      </li>
+                
+                    </ul>
+                    </p>
+  
+                    <h2>Rationale</h2>
+                    <p>Potential applications of this project could include:</p>
+                    <ul>
+                      <li>
+                        At a government level, allow the analysis of the rebate schemes success, and direct future initiatives 
+                        and renewable energy policy. 
+                      </li>
+                      <li>
+                        At the individual household level, allow consumers to see how their suburb compares to the nation and
+                        how solar has changed over time. Such information could promote further adoption of solar and could be 
+                        used as a marketing tool. 
+                      </li>
+                    </ul>
+                    
+                    <h2>Datasets</h2>
+
+                    <ol>
+                      <li>Australian Clean Energy Regulator – 2001-2021 Small Scale Solar Installations Australia. Available at: 
+                      </li><a href="http://www.cleanenergyregulator.gov.au/RET/Forms-and-resources/Postcode-data-for-small-scale-installations#Historical-data" target="_blank">Installations</a>
+                      <li>Australian Bureau of Statistics. Taxation statistics dataset. Available at:
+                      </li><a href="https://data.gov.au/data/dataset/taxation-statistics-postcode-data/resource/b713d037-d9f5-49e5-a492-502cd7b3a15a" target="_blank">Wage Data</a>
+                      <li>Australian Clean Energy Regulator – Postcode rebate zone ratings
+                      </li><a href="http://www.cleanenergyregulator.gov.au/DocumentAssets/Pages/Postcode-zone-ratings-and-postcode-zones-for-solar-panel-systems.aspx" target="_blank">Rebate Data</a>
+                      <li>Australia – mean income by state. Available at:
+                      </li><a href="https://www.statista.com" target="_blank">Income</a>
+                      <li>GeoJSON for Australian Suburbs. Available at: </li><a href="https://github.com/tonywr71/GeoJson-Data/blob/master/australian-suburbs.geojson
+                        " target="_blank">GeoJSON Australian Suburbs</a>
+                      <li>Australian Database of Postcode and Suburb data. Available at:</li><a href="https://www.matthewproctor.com/australian_postcodes
+                      " target="_blank">Postcode and Suburb</a>
+                     
+                    </ol>
+                  
+  
+  
+                  </div>
+          </div>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

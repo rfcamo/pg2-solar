@@ -1,0 +1,130 @@
+/*  Base styles */
+body {
+    padding: 0;
+    margin: 0;
+    background-image: url("../../templates/backdrop.jpg") !important;
+    /* background-color: #cccccc !important; */
+}
+  
+  #map {
+    height: 1200px !important;
+    width: 1600px !important;
+    text-align: center;
+    position: relative;
+  }
+  
+  
+  .zoom-box {
+    bottom: 1; 
+    left: 0;
+    /* transform: translate(40%, 150%); */
+    position: absolute;
+    /* margin-top: 20px;
+    padding: 16px;
+    padding-bottom: 3px; */
+    font: 12px Arial, Helvetica, sans-serif;
+    background: white;
+    background: rgba(255,255,255,0.8);
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    border-radius: 5px;
+    z-index: 9999;
+    text-align: center;
+  }
+  
+  @media screen and (min-width: 1800px) {
+    .zoom-box {
+        transform: translate(40%, 58%);
+    }
+  }
+
+  @media screen and (min-width: 1900px) {
+    .zoom-box {
+        transform: translate(40%, 150%);
+    }
+  }
+
+  .zoom-button {
+    border-radius: 3px;
+    background-color: rgba(27, 27, 27, 0.2);
+    font-size: 11px Arial, Helvetica, sans-serif;
+    padding: 4px;
+    margin-bottom: 5px;
+    width: 100%;
+    margin-right: 0px;
+    margin-left: 0px;
+    text-align: center;
+  }
+
+  /* Legend Styles */
+.info {
+    padding: 6px 8px;
+    font: 14px/16px Arial, Helvetica, sans-serif;
+    background: white;
+    background: rgba(255,255,255,0.8);
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    border-radius: 5px;
+    }
+    
+.legend {
+background-color: “black”;
+line-height: 25px;
+color: #555;
+width: auto;
+}
+
+.leg {
+    width: 18px;
+    height: 18px;
+    float: left;
+    margin-right: 8px;
+    opacity: 0.6;
+    }
+
+/* Title Styles */
+.title-text {
+    left: 35%;
+    /* transform: translate(-50%, 0%); */
+    position: absolute;
+    margin-top: 20px;
+    padding: 16px;
+    padding-bottom: 3px;
+    font: 26px/28px Arial, Helvetica, sans-serif;
+    background: white;
+    background: rgba(255,255,255,0.8);
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    border-radius: 5px;
+    z-index: 9999;
+    text-align: center;
+  }
+  
+  .title-text p {
+    font: 14px/16px Arial, Helvetica, sans-serif;
+  }
+  
+  
+  /* Pop-up Styles  */
+  .leaflet-label {
+    width: 100px;
+    line-height: 12px;
+    text-align: center;
+  }
+  .leaflet-label .pct{
+  font-size: 20px;
+  font-weight: 600;
+  }
+  
+  .pop-up {
+    width: 100px;
+    padding-left: 0px;
+    padding-right: 0px;
+    font-size: 11pt;
+  }
+
+  .leaflet-control-layers-list {
+      text-align: left;
+  }
+
+.map-container {
+    position: absolute;
+    left: -25%;
+}
